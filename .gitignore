@@ -1,0 +1,58 @@
+# Python / editor caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.vscode/
+.idea/
+*.egg-info/
+/build/
+/dist/
+
+# Generated assets and local experiment data
+/models/
+/checkpoints/
+/logs/
+/backups/
+/processed/
+/feedback/
+/data/processed/
+/data/feedback/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.log
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.db
+*.db-wal
+*.db-shm
+
+# Publish only the reviewed example datasets; other local data stays private.
+/data/raw/*
+!/data/raw/starter.txt
+!/data/raw/dialogue_seed_v03.jsonl
+!/data/raw/dialogue_basic_v031.jsonl
+/data/evaluation/*
+!/data/evaluation/dialogue_development_v031.jsonl
+
+# Local credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# OS metadata
+Thumbs.db
+Desktop.ini
+.DS_Store
